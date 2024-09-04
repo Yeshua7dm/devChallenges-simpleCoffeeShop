@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "DM Sans", sans-serif;
+  @apply flex justify-center bg-[#0f1011] bg-no-repeat bg-[0_0] bg-[url("./assets/bg-cafe.jpg")] bg-[100vw_auto] sm:px-[100px] bg-fixed text-white;
+}
+
+.btn {
+  @apply py-2 px-3 hover:bg-[#6f757ca2] rounded-lg text-white text-[14px];
+}
+.active-btn {
+  @apply bg-[#6F757C];
+}
+
+@layer utilities {
+  .custom-container {
+    @apply max-w-[70rem] flex flex-col mt-40 bg-[#1B1D1F] p-20 mx-auto rounded-3xl bg-[url('./assets/vector.svg')] bg-no-repeat bg-[60%_5%];
+  }
+
+  .items_container {
+    @apply w-full mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16;
+  }
+}
